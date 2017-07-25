@@ -1,0 +1,46 @@
+/*Edicion del Cuerpo*/
+#col-2-01{
+	width: 30%;
+	float: left;
+}
+#col-2-02{
+	width: 60%;
+	float: right;
+	margin-top: 55px;
+	border-color: #19366C;
+}
+#col-2-02 img{
+}
+#col-2-01, #col-2-02{
+	text-align: center;
+	color: #404040;
+	border-radius: 5px;
+	text-align: justify;
+	font-style: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	/*background-color: #19366C;*/
+}
+#col-2-01 ul li{
+	color: #19366C;
+	font-weight: bold;
+}
+
+/*Diseño del formulario*/
+.formulario ul li{
+	list-style: none;
+	width: 275px;
+}
+#comentario1{
+	width: 275px;
+	height: 155px;
+}
+#nombre, #email, #empresa{
+	width: 275px;
+}
+#boton{
+	background-color: #19366C;
+	cursor: pointer;
+	width: 80px;
+	height: 30px;
+	color: #fff;
+}

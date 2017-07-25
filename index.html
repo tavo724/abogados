@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Serrato Noriega Abogados</title>
+		<link rel="stylesheet" type="text/css" href="css/abogados.css">
+		<link rel="icon" href="images/favicon.ico">
+		<script src="js/modernizr.custom.js" type="text/javascript"></script>
+		<script src="js/respond.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<script language=javascript>
+			xx = (screen.width - 443);
+			window.open("afiche.html","rep10","scrollbars=NO,left="+xx+",Top=0,resizable=NO,Width=589,Height=290")
+		</script>
+		<header>
+			<div class="container">
+				<a href="index.html"><img id="cabeza" src="images/logo6.png" ></a>
+				<div id="logos">
+				<a href="https://www.facebook.com/serratonoriega?fref=ts" target="_new"><img src="images/facebook.png" ></a>
+				<a href="http://correo.serratonoriega.com/" target="_new"><img src="images/msg2.png" width="22px" height="22px"></a>
+				<!--a href="#"><img src="images/skype2.jpg"></a-->
+				</div>	
+			</div>
+		</header>
+		<nav id="menu">
+			<ul class="container">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="area.html">Areas</a></li>
+				<li><a href="abogados.html">Los Abogados</a></li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="contactanos.html">Contactanos</a></li>
+			</ul>
+		</nav>
+		<section class="container">
+			<div id="slider">
+				<div class="slide">
+					<img src="images/slider/01.png" >
+				</div>
+				<!--div class="slide">
+					<img src="images/slider/02.png" >
+				</div>
+				<div class="slide">
+					<img src="images/slider/03.png" >
+				</div>
+				<!--div class="slide">
+					<img src="images/slider/04.jpg" >
+				</div-->
+				<div class="slide">
+					<img src="images/slider/05.png" >
+				</div>
+				<div class="slide">
+					<img src="images/slider/06.png" >
+				</div>
+			</div>
+		</section>
+
+		<br>
+
+		<section class="container">
+			<div id="cuerpo">
+				<div id="col-01">
+					<h2>El Estudio</h2>
+					<p class="texto">Serrato Noriega Abogados ofrece soluciones a través de un servicio integral, en el que se brindan soluciones legales a problemas específicos, evaluando el contexto en que éstos se presentan.</p>
+					<a href="#" class="avanza"><img src="images/botonAvanzar.png"></a>
+				</div>
+				<div id="col-02">
+					<h2>Abogados</h2>
+					<p class="texto">Los abogados del Estudio se han desempeñado como asesores de las más importantes empresas privadas y estatales de la localidad de Lambayeque.</p>
+					<a href="abogados.html" class="avanza"><img src="images/botonAvanzar.png"></a>
+				</div>
+				<div id="col-03">
+					<h2>Áreas</h2>
+					<p class="texto">
+						Debido a las exigencias actuales del mercado mundial, caracterizado por la globalización y la transversalidad de sus retos, es imprescindible ofrecer a los clientes una asesoría legal que esté respaldada por una visión actual y una amplia experiencia en todas las áreas.
+					</p>
+					<a href="area.html" class="avanza"><img src="images/botonAvanzar.png"></a>
+				</div>
+			</div>
+		</section>
+		<div class="clearfix"></div>
+		
+		<!--div class="clearfix"></div-->
+		<footer id="pie">
+			&copy Derechos reservados a Dennis Joel &copy 
+			dj2203@hotmail.com
+		</footer>
+
+	</body>
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script-->
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+	<script>
+		$(function(){
+			var pull = $('#pull');
+			menu = $('nav ul');
+			menuHeight = menu.height();
+
+			$(pull).on('click',function(e){
+				e.preventDefault();
+				menu.slideToggle();
+			});
+		$(window).resize(function(){
+			var w = $(window).width();
+			if (w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+		});
+	</script>
+	<script src="js/jquery.carouFredSel-5.5.2.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$("#slider").carouFredSel({
+  		responsive  : true,
+  		scroll    : {
+    	fx      : "crossfade",
+    	easing    : "swing",
+    	duration  : 500,
+
+  		},
+  		items   : {
+    	visible   : 1,
+    	height    : "27%"
+  		}
+	});
+	</script>
+
+	<!-- SLIDESHOW SCRIPT END -->
+
+</html>

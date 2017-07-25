@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Serrato Noriega Abogados</title>
+		<link rel="stylesheet" type="text/css" href="css/abogados.css">
+		<link rel="icon" href="images/favicon.ico">
+		<script src="js/modernizr.custom.js" type="text/javascript"></script>
+		<script src="js/respond.min.js" type="text/javascript"></script>
+	
+	<script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
+    <link rel="stylesheet" href="css/bjqs.css">
+    <link rel="stylesheet" href="css/demo.css">
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="index.html"><img id="cabeza" src="images/logo6.png" ></a>
+				<div id="logos">
+				<a href="https://www.facebook.com/serratonoriega?fref=ts" target="_new"><img src="images/facebook.png" ></a>
+				<a href="http://correo.serratonoriega.com/" target="_new"><img src="images/msg2.png" width="22px" height="22px"></a>
+				<!--a href="#"><img src="images/skype2.jpg"></a-->
+				</div>	
+			</div>
+		</header>
+		<nav id="menu">
+			<ul class="container">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="area.html">Areas</a></li>
+				<li><a href="abogados.html">Los Abogados</a></li>
+				<li><a href="">Novedades</a></li>
+				<li><a href="contactanos.html">Contactanos</a></li>
+			</ul>
+		</nav>
+		<section class="container">
+			<div id="slider">
+				<!--div class="slide">
+					<img src="images/slider/01.png" >
+				</div-->
+				<div class="slide">
+					<img src="images/slider/02.png" >
+				</div>
+				<div class="slide">
+					<img src="images/slider/03.png" >
+				</div>
+				<!--div class="slide">
+					<img src="images/slider/04.jpg" >
+				</div-->
+				<div class="slide">
+					<img src="images/slider/05.png" >
+				</div>
+				<!--div class="slide">
+					<img src="images/slider/06.png" >
+				</div-->
+			</div>
+		</section>
+
+		<br>
+
+		<section class="container">
+	
+			<h1 style="color: #19366C;
+				font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:2em">NUESTRAS NOVEDADES
+			</h1>
+
+			<div id="banner-fade" class="slider-centrar">
+
+		        <!-- start Basic Jquery Slider -->
+		        <ul class="bjqs">
+		          <li><img src="images/novedades/hector00.jpg" width="620px" height="310px" title=""></li>
+		          <li><img src="images/novedades/hector01.jpg" width="620px" height="310px" title="En la Demuna de la Municipalidad Distrital de Illimo ...brindando el Estudio Serrato Noriega SAC Abogados sus actos Pro-bono"></li>
+		          <li><img src="images/novedades/hector02.jpg" width="620px" height="310px" title="Estudio Serrato Noriega SAC Abogados cumpliendo con el apoyo a los niños del distrito de illimo...En la charla sobre el derecho al juego expuesta por Zully Alexandra Villalobos Bernabé"></li>
+		          <li><img src="images/novedades/hector03.jpg" width="620px" height="310px" title="Estudio Serrato Noriega departiendo encuentro de fulbito incentivando el deporte."></li>
+		          <li><img src="images/novedades/hector04.jpg" width="620px" height="310px" title="Se constituyó la Empresa El sol de Orgman SAC en Mancora....Empresa que contara con la asesoria del Estudio Serrato Noriega SAC Abogados"></li>
+		          <li><img src="images/novedades/hector05.jpg" width="620px" height="310px" title="El equipo de profesionales del estudio SERRATO NORIEGA SAC ABOGADOS"></li>
+		          <li><img src="images/novedades/hector06.jpg" width="620px" height="310px" title="En la mina de mineral de hierro en san jose de Cajamarca cerca a nueva Arica y a dos horas de la ciudad de chiclayo"></li>
+		        </ul>
+		        <!-- end Basic jQuery Slider -->
+
+	        </div>
+		</section>
+		<script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 320,
+            width       : 620,
+            responsive  : true
+          });
+
+        });
+      </script>
+		<div class="clearfix"></div>
+		<section id="datos_empresa">
+			<h3>Contactanos</h3>
+			<p>
+				Serrato Noriega Abogados - Av. Santa Victoria 639 Int. 5 -Chiclayo<br>
+				<img src="images/telefono.png">
+				074-618422 | RPC 953175480<br>
+				serratonoriegasac@serratonoriega.com
+			</p>		
+		</section>
+		<!--div class="clearfix"></div-->
+		<footer id="pie">
+			&copy Derechos reservados a Dennis Joel &copy 
+			dj2203@hotmail.com
+		</footer>
+
+
+
+	</body>
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script-->
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+	<script>
+		$(function(){
+			var pull = $('#pull');
+			menu = $('nav ul');
+			menuHeight = menu.height();
+
+			$(pull).on('click',function(e){
+				e.preventDefault();
+				menu.slideToggle();
+			});
+		$(window).resize(function(){
+			var w = $(window).width();
+			if (w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+		});
+	</script>
+	<script src="js/jquery.carouFredSel-5.5.2.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$("#slider").carouFredSel({
+  		responsive  : true,
+  		scroll    : {
+    	fx      : "crossfade",
+    	easing    : "swing",
+    	duration  : 500,
+
+  		},
+  		items   : {
+    	visible   : 1,
+    	height    : "27%"
+  		}
+	});
+	</script>
+
+	<!-- SLIDESHOW SCRIPT END -->
+
+</html>

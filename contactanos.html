@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Serrato Noriega Abogados</title>
+		<link rel="stylesheet" type="text/css" href="css/abogados.css">
+		<link rel="stylesheet" type="text/css" href="css/abogados2.css">
+
+		<link rel="icon" href="images/favicon.ico">
+
+		<script src="js/modernizr.custom.js" type="text/javascript"></script>
+		<script src="js/respond.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/validacion.js"></script>		
+		<style type="text/css">
+			input.error{
+				background-color: #ff9;
+				border: 1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="index.html"><img id="cabeza" src="images/logo6.png" ></a>
+				<div id="logos">
+				<a href="https://www.facebook.com/serratonoriega?fref=ts" target="_new"><img src="images/facebook.png" ></a>
+				<a href="http://correo.serratonoriega.com/" target="_new"><img src="images/msg2.png" width="22px" height="22px"></a>
+				<!--a href="#"><img src="images/skype2.jpg"></a-->
+				</div>	
+			</div>
+		</header>
+		<nav id="menu">
+			<ul class="container">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="area.html">Areas</a></li>
+				<li><a href="abogados.html">Los Abogados</a></li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="#">Contactanos</a></li>
+			</ul>
+		</nav>
+		<section class="container">
+			<div id="slider">
+				<div class="slide">
+					<img src="images/slider/01.png" >
+				</div>
+				<!--div class="slide">
+					<img src="images/slider/02.png" >
+				</div>
+				<div class="slide">
+					<img src="images/slider/03.png" >
+				</div>
+				<!--div class="slide">
+					<img src="images/slider/04.jpg" >
+				</div-->
+				<div class="slide">
+					<img src="images/slider/05.png" >
+				</div>
+				<div class="slide">
+					<img src="images/slider/06.png" >
+				</div>
+			</div>
+		</section>
+
+		<br>
+
+		<section class="container">
+			<div id="cuerpo">
+				<div id="col-2-01">
+					<p>
+						<img src="images/home4.png">
+						Av. Santa Victoria 639 Int. 5 -Chiclayo
+						<br>
+						<img src="images/telefono.png">
+						074-618422 | RPC 986779592
+						<br>
+						serratonoriegasac@serratonoriega.com
+						<div class="formulario">
+							<form method="POST" action="mail.php" >
+								<ul>
+									<li>
+										<label>DÉJANOS TU MENSAJE</label>	
+									</li>
+									<li>
+										<input type="text" name="nombre" id="nombre" placeholder="Nombre" required/>	
+									</li>
+									<li>
+										<input type="email" name="email" id="email" placeholder="E-mail" required/>
+									</li>
+									<li>
+										<input type="text" name="empresa" id="empresa" placeholder="Empresa" required/>
+									</li>
+									<li>
+										<textarea name="comentario" id="comentario1" placeholder="Comentario" cols="36" rows="5" required></textarea>
+									</li>
+									<li>
+										<input type="submit" value="Enviar" id="boton" />
+										<!--button id="boton">Enviar</button-->
+									</li>
+								</ul>
+							</form>
+						</div>
+					</p>		
+				</div>
+				<div id="col-2-02">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.882752690613!2d-79.8434333!3d-6.7841204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef3afe993f7b%3A0xd0bbb290ee0de50f!2sSta+Victoria+639%2C+Chiclayo!5e0!3m2!1ses-419!2spe!4v1428534447426" width="600" height="450" frameborder="0" style="border:0"></iframe>	
+				</div>
+			</div>
+		</section>
+		<div class="clearfix"></div>
+		<section id="datos_empresa">
+			<h3>Contactanos</h3>
+			<p>
+				Serrato Noriega Abogados - Av. Santa Victoria 639 Int. 5 -Chiclayo<br>
+				<img src="images/telefono.png">
+				074-618422 | RPC 953175480<br>
+				serratonoriegasac@serratonoriega.com
+			</p>		
+		</section>
+		<!--div class="clearfix"></div-->
+		<footer id="pie">
+			&copy Derechos reservados a Dennis Joel &copy 
+			dj2203@hotmail.com
+		</footer>
+
+	</body>
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script-->
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+	<script>
+		$(function(){
+			var pull = $('#pull');
+			menu = $('nav ul');
+			menuHeight = menu.height();
+
+			$(pull).on('click',function(e){
+				e.preventDefault();
+				menu.slideToggle();
+			});
+		$(window).resize(function(){
+			var w = $(window).width();
+			if (w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+		});
+	</script>
+	<script src="js/jquery.carouFredSel-5.5.2.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$("#slider").carouFredSel({
+  		responsive  : true,
+  		scroll    : {
+    	fx      : "crossfade",
+    	easing    : "swing",
+    	duration  : 500,
+
+  		},
+  		items   : {
+    	visible   : 1,
+    	height    : "27%"
+  		}
+	});
+	</script>
+
+	<!-- SLIDESHOW SCRIPT END -->
+
+</html>

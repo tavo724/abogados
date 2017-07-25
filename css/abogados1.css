@@ -1,0 +1,25 @@
+/*Edicion del Cuerpo*/
+#col-1-01{
+	width: 60%;
+	float: left;
+}
+#col-1-02{
+	width: 30%;
+	float: right;
+	margin-top: 55px;
+}
+#col-1-02 img{
+}
+#col-1-01, #col-1-02{
+	text-align: center;
+	color: #404040;
+	border-radius: 5px;
+	text-align: justify;
+	font-style: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	/*background-color: #19366C;*/
+}
+#col-1-01 ul li{
+	color: #19366C;
+	font-weight: bold;
+}
